@@ -1,8 +1,15 @@
 {
 	"version": "1.1.6",
-	"title": "Paper theme",
+	"title": "Forked Paper theme",
 	"description": "A simple, clean, flexible Hugo theme, customized for Micro.blog.",
 	"fields": [
+		{
+			"field": "params.testing",
+			"label": "testing",
+			"placeholder": "Your test name",
+			"value": "VALUE",
+			"default": "DEFAULT"
+		},
 		{
 			"field": "params.twitter",
 			"label": "Twitter",
@@ -27,11 +34,6 @@
 			"field": "params.mastodon",
 			"label": "Mastodon",
 			"placeholder": "Your Mastodon profile url (including instance)"
-		},
-		{
-			"field": "params.linkedin",
-			"label": "LinkedIn",
-			"placeholder": "Your LinkedIn username"
 		},
 		{
 			"field": "params.buymeacoffee",
