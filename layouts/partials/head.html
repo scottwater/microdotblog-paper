@@ -5,14 +5,14 @@
 
   <!-- Title -->
   <title>
-      {{- block "title" . -}}
-      {{- .Site.Title -}}
-      {{- if .Title }}
-      - {{ .Title }}
-    {{- else}}
-      - {{ .Summary }}}
-      {{- end -}}
-      {{- end -}}
+      {{ if .IsHome }}
+        Home
+      {{ else if .Title }}
+        {{ .Title }}
+      {{ else}}
+        {{ .Summary }}}
+      {{ end }}
+      - {{ .Site.Title }}
   </title>
 
   <!-- Meta -->
